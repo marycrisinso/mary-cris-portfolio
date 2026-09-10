@@ -337,3 +337,54 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skill-category {
+    background-color: #f4f8fb;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #dceaf5;
+}
+
+.skill-category h3 {
+    color: #244e6b;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-list span {
+    background-color: white;
+    color: #39739d;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid #c8d9e8;
+}
+
+
+/* =========================
+   SKILLS MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
