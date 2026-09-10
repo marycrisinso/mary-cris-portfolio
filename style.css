@@ -175,3 +175,106 @@ footer {
         gap: 15px;
     }
 }
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.hero-greeting {
+    font-size: 18px;
+    color: #5b8db8;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    color: #163b5c;
+    margin-bottom: 12px;
+}
+
+.hero-title {
+    font-size: 22px;
+    color: #45677f;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    font-size: 17px;
+    color: #526575;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #163b5c;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #244e6b;
+}
+
+.secondary-btn {
+    border: 2px solid #163b5c;
+    color: #163b5c;
+    background-color: white;
+}
+
+.secondary-btn:hover {
+    background-color: #dceaf5;
+}
+
+
+/* =========================
+   HERO MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-title {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
