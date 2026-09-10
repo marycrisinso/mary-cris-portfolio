@@ -539,3 +539,45 @@ footer {
         padding: 22px;
     }
 }
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #163b5c;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #244e6b;
+}
+
+
+/* =========================
+   CONTACT MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-links a {
+        text-align: center;
+    }
+}
