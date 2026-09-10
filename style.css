@@ -388,3 +388,66 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f4f8fb;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #dceaf5;
+    border-left: 4px solid #8db4d1;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    color: #244e6b;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #526575;
+    font-size: 15px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.project-tech span {
+    background-color: white;
+    color: #39739d;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    border: 1px solid #c8d9e8;
+}
+
+
+/* =========================
+   PROJECTS MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
