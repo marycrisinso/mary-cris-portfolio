@@ -581,3 +581,156 @@ footer {
         text-align: center;
     }
 }
+
+/* Hero Container with soft abstract gradient */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4.5rem 1.5rem 3.5rem;
+    background: radial-gradient(circle at 10% 20%, rgba(206, 222, 238, 0.45) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(195, 215, 235, 0.5) 0%, transparent 45%),
+                #f8fafc;
+    overflow: hidden;
+}
+
+/* Optional organic background corner accents (matching the banner's shapes) */
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+    pointer-events: none;
+}
+.hero::before {
+    top: -60px;
+    left: -60px;
+    width: 260px;
+    height: 260px;
+    background: rgba(184, 207, 227, 0.55);
+}
+.hero::after {
+    bottom: -60px;
+    right: -60px;
+    width: 280px;
+    height: 280px;
+    background: rgba(170, 198, 224, 0.45);
+}
+
+/* Ensure content sits above background blobs */
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-greeting {
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #4a6582;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+/* Bold Navy Name Header */
+.hero-name {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #0e2a47; /* Deep Navy from banner */
+    margin: 0;
+}
+
+/* Thin horizontal rule under the name */
+.hero-divider {
+    width: 140px;
+    height: 2px;
+    background-color: #8da4be;
+    margin: 0.85rem auto 1.25rem;
+    border-radius: 2px;
+}
+
+/* Subtitle / Roles */
+.hero-title {
+    font-size: clamp(1rem, 2.2vw, 1.25rem);
+    font-weight: 600;
+    color: #1a3959;
+    margin-bottom: 1.25rem;
+}
+
+.hero-title .sep {
+    color: #8da4be;
+    margin: 0 0.35rem;
+}
+
+/* Light blue pill container matching the banner */
+.hero-pill {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #d8e5f2;
+    color: #123253;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(18, 50, 83, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.hero-pill .dot {
+    color: #4a6582;
+    font-size: 0.8rem;
+}
+
+/* Short descriptive paragraph */
+.hero-description {
+    max-width: 580px;
+    color: #3b5066;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Action buttons */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.75rem 1.6rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.primary-btn {
+    background-color: #0e2a47;
+    color: #ffffff;
+}
+.primary-btn:hover {
+    background-color: #173f6b;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid #0e2a47;
+    color: #0e2a47;
+}
+.secondary-btn:hover {
+    background-color: #0e2a47;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
