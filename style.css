@@ -13,17 +13,13 @@ scroll-behavior: smooth;
 }
 
 body {
-    font-family: Monospace, sans-serif;
+    margin: 0;
 
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
 
-    color: #eaf2f0;
+    background: #050505;
 
-    background-color: #050505;
-}
-
-a {
-color: #39739d;
+    color: #ffffff;
 }
 
 /* =========================
@@ -31,9 +27,9 @@ HEADER
 ========================= */
 
 header {
-    background-color: #050505;
+    background: #050505;
 
-    border-bottom: 1px solid #17211f;
+    border-bottom: none;
 }
 
 /* =========================
@@ -41,124 +37,227 @@ header {
 ========================= */
 
 .hero {
-    width: 100%;
-    max-width: 1000px;
+    width: 1100px;
+    max-width: 90%;
 
-    margin: 0 auto;
-    padding: 80px 40px 50px;
+    margin: 80px auto 0;
 
     display: grid;
 
-    grid-template-columns: 1fr 1.4fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 480px 1fr;
+
+    gap: 70px;
 
     align-items: center;
-
-    column-gap: 70px;
-    row-gap: 70px;
-
-    background: transparent;
 }
 
 
 /* =========================
-   HERO IMAGE
+   LEFT SIDE
+========================= */
+
+.hero-left {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+/* =========================
+   PROFILE IMAGE
 ========================= */
 
 .hero-image {
-    grid-column: 1;
-    grid-row: 1;
-
     display: flex;
+
     justify-content: center;
     align-items: center;
 }
 
 .hero-image img {
-    width: 280px;
-    height: 280px;
+    width: 370px;
+    height: 370px;
 
     object-fit: cover;
 
     border-radius: 50%;
 
-    border: 2px solid #00a8ff;
+    border: 3px solid #00a8ff;
 
     box-shadow:
-        0 0 25px rgba(0, 168, 255, 0.15);
+        0 0 0 2px #00d9a5;
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.hero-image img:hover {
-    transform: scale(1.04);
-
-    box-shadow:
-        0 0 35px rgba(0, 217, 165, 0.3);
+    display: block;
 }
 
 
 /* =========================
-   HERO CONTENT
+   HERO BUTTONS
 ========================= */
 
-.hero-content {
-    grid-column: 2;
-    grid-row: 1;
+.hero-buttons {
+    display: flex;
 
-    padding: 35px;
+    justify-content: center;
 
-    border: 1px solid #00a8ff;
+    gap: 18px;
 
-    background: #0b0f0e;
+    width: 100%;
+}
 
-    text-align: left;
+.btn {
+    min-width: 180px;
 
-    box-shadow:
-        0 0 25px rgba(0, 168, 255, 0.08);
+    padding: 16px 22px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    border-radius: 8px;
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    letter-spacing: 0.03em;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.btn span {
+    font-size: 1.2rem;
 }
 
 
-/* Greeting */
+/* MY PROJECTS */
 
-.hero-greeting {
-    margin-bottom: 35px;
+.primary-btn {
+    background: #00d9a5;
 
-    color: #eaf2f0;
+    color: #03110d;
 
-    font-size: 1rem;
+    border: 2px solid #00d9a5;
 }
 
+.primary-btn:hover {
+    background: #00a8ff;
 
-/* Name */
-
-.hero-name {
-    margin-bottom: 25px;
+    border-color: #00a8ff;
 
     color: #ffffff;
 
-    font-size: clamp(2rem, 4vw, 3.2rem);
+    transform: translateY(-3px);
 
-    font-weight: 800;
-
-    letter-spacing: 0.04em;
-
-    line-height: 1.1;
+    box-shadow: 0 10px 25px rgba(0, 217, 165, 0.2);
 }
 
 
-/* Job title */
+/* CONTACT */
+
+.secondary-btn {
+    background: transparent;
+
+    color: #00a8ff;
+
+    border: 2px solid #00a8ff;
+}
+
+.secondary-btn:hover {
+    background: #00a8ff;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0, 168, 255, 0.2);
+}
+
+
+/* =========================
+   INFORMATION BOX
+========================= */
+
+.hero-content {
+    min-height: 480px;
+
+    padding: 48px 42px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: #050505;
+
+    border: 2px solid #00a8ff;
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   GREETING
+========================= */
+
+.hero-greeting {
+    margin: 0 0 20px;
+
+    color: #ffffff;
+
+    font-size: 1.2rem;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   NAME
+========================= */
+
+.hero-name {
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: clamp(2.5rem, 4vw, 4rem);
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: 0.02em;
+}
+
+
+/* =========================
+   JOB TITLE
+========================= */
 
 .hero-title {
-    margin-bottom: 20px;
+    margin: 0 0 28px;
 
     color: #00d9a5;
 
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 .hero-title .sep {
@@ -169,7 +268,7 @@ header {
 
 
 /* =========================
-   HERO PILL
+   INFORMATION PILL
 ========================= */
 
 .hero-pill {
@@ -179,151 +278,106 @@ header {
 
     flex-wrap: wrap;
 
-    gap: 7px;
+    gap: 8px;
 
-    margin-bottom: 25px;
+    width: fit-content;
 
-    padding: 5px 10px;
+    max-width: 100%;
 
-    background: rgba(0, 168, 255, 0.12);
+    margin-bottom: 30px;
 
-    color: #b8fff0;
+    padding: 13px 20px;
 
-    font-size: 0.9rem;
+    border: 1px solid #008f9c;
 
-    border-left: 3px solid #00d9a5;
-}
+    border-radius: 30px;
 
-.hero-pill .dot {
-    color: #00a8ff;
-}
+    background: #071b1d;
 
-
-/* =========================
-   HERO DESCRIPTION
-========================= */
-
-.hero-description {
-    max-width: 520px;
-
-    margin-bottom: 0;
-
-    color: #aebbb8;
-
-    font-size: 1rem;
-
-    line-height: 1.6;
-}
-
-
-/* =========================
-   HERO BUTTONS
-========================= */
-
-.hero-buttons {
-    grid-column: 1 / -1;
-    grid-row: 2;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 10px;
-}
-
-.btn {
-    display: inline-block;
-
-    padding: 12px 20px;
-
-    border-radius: 4px;
-
-    text-decoration: none;
-
-    font-weight: 600;
+    color: #ffffff;
 
     font-size: 0.95rem;
 
-    transition:
-        transform 0.3s ease,
-        background-color 0.3s ease,
-        box-shadow 0.3s ease;
+    line-height: 1.4;
+}
+
+.hero-pill .dot {
+    color: #00d9a5;
 }
 
 
-/* Primary button */
+/* =========================
+   DESCRIPTION
+========================= */
 
-.primary-btn {
-    background: #00d9a5;
+.hero-description {
+    max-width: 650px;
 
-    color: #03110d;
-}
+    margin: 0;
 
-.primary-btn:hover {
-    background: #00a8ff;
+    color: #d0d6d5;
 
-    color: #ffffff;
+    font-size: 1.1rem;
 
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 8px 20px rgba(0, 217, 165, 0.2);
-}
-
-
-/* Secondary button */
-
-.secondary-btn {
-    background: transparent;
-
-    border: 1px solid #00a8ff;
-
-    color: #00a8ff;
-}
-
-.secondary-btn:hover {
-    background: #00a8ff;
-
-    color: #ffffff;
-
-    transform: translateY(-3px);
+    line-height: 1.7;
 }
 
 /* =========================
-NAVIGATION
+   NAVIGATION
 ========================= */
 
 nav {
+    width: 100%;
+
+    margin: 90px auto 0;
+
+    padding: 25px 0;
+
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
-    flex-wrap: wrap;
+    gap: 70px;
 
-    gap: 35px;
+    border-top: 1px solid #183f49;
 
-    padding: 0 20px 35px;
+    border-bottom: 1px solid #183f49;
 }
 
 nav a {
-    color: #aebbb8;
+    position: relative;
+
+    color: #ffffff;
 
     text-decoration: none;
 
-    font-weight: 600;
+    font-size: 1rem;
 
-    transition:
-        color 0.3s ease,
-        transform 0.3s ease;
+    font-weight: 500;
+
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     color: #00d9a5;
+}
 
-    transform: translateY(-2px);
+nav a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: -12px;
+
+    height: 3px;
+
+    background: #00d9a5;
 }
 
 /* =========================
@@ -1131,4 +1185,73 @@ nav {
 }
 ```
 
+}
+
+@media (max-width: 850px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        width: 90%;
+
+        gap: 50px;
+
+        margin-top: 50px;
+    }
+
+    .hero-left {
+        order: 1;
+    }
+
+    .hero-content {
+        order: 2;
+
+        min-height: auto;
+
+        padding: 35px 25px;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        gap: 25px;
+
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-name {
+        font-size: 2.3rem;
+    }
+
+    .hero-title {
+        font-size: 1rem;
+    }
+
+    .hero-pill {
+        font-size: 0.8rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        min-width: 150px;
+    }
 }
