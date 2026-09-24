@@ -37,36 +37,22 @@ HERO SECTION
 ========================= */
 
 .hero {
-position: relative;
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
 
-```
-max-width: 1100px;
-margin: 0 auto;
+    max-width: 1100px;
+    margin: 0 auto;
 
-padding: 4.5rem 2rem 3.5rem;
+    padding: 4.5rem 2rem 3.5rem;
 
-text-align: left;
+    text-align: left;
 
-background:
-    radial-gradient(
-        circle at 10% 20%,
-        rgba(206, 222, 238, 0.45) 0%,
-        transparent 40%
-    ),
-    radial-gradient(
-        circle at 90% 80%,
-        rgba(195, 215, 235, 0.5) 0%,
-        transparent 45%
-    ),
-    #f8fafc;
+    background: transparent;
 
-overflow: hidden;
-```
-
+    overflow: hidden;
 }
 
 /* Decorative background circles */
