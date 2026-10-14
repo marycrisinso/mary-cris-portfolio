@@ -1,386 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mary Cris Inso | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050B15">
+  <meta name="description" content="Mary Cris Inso — Virtual Assistant, data entry, research, administrative support, and IT projects.">
+  <title>Mary Cris Inso | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- ==================== HEADER ==================== -->
-    <header>
-
-       <!-- HERO SECTION -->
-<div class="hero">
-
-    <!-- LEFT SIDE: PHOTO + BUTTONS -->
-    <div class="hero-left">
-
-        <div class="hero-image">
-            <img src="images/profile.jpg" alt="Mary Cris Inso">
-        </div>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="btn primary-btn">
-                MY PROJECTS
-                <span>→</span>
-            </a>
-
-            <a href="#contact" class="btn secondary-btn">
-                CONTACT ME
-                <span>→</span>
-            </a>
-        </div>
-
-    </div>
-
-
-    <!-- RIGHT SIDE: INFORMATION -->
-    <div class="hero-content">
-
-        <p class="hero-greeting">Hello I'm</p>
-
-        <h1 class="hero-name">MARY CRIS INSO</h1>
-
-        <p class="hero-title">
-            <span>Virtual Assistant</span>
-            <span class="sep">|</span>
-            <span>Data Entry</span>
-            <span class="sep">|</span>
-            <span>Research</span>
-            <span class="sep">|</span>
-            <span>Administrative Support</span>
-        </p>
-
-        <div class="hero-pill">
-            <span>BSIT Student</span>
-            <span class="dot">•</span>
-            <span>Detail-Oriented</span>
-            <span class="dot">•</span>
-            <span>Reliable</span>
-            <span class="dot">•</span>
-            <span>Fast Learner</span>
-        </div>
-
-        <p class="hero-description">
-            I help with data entry, online research, content organization,
-            and administrative tasks with attention to detail and accuracy.
-        </p>
-
-    </div>
-
-</div>
-
-
-<!-- NAVIGATION -->
-<nav>
-    <a href="#about" class="active">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-</nav>
-        
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="#home">MARY CRIS <span>INSO</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle light theme" title="Toggle theme">☾</button>
+  </div>
 </header>
 
-
-<!-- ==================== MAIN CONTENT ==================== -->
 <main>
+<section class="hero wrap" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow"><i></i> VIRTUAL ASSISTANT · BSIT STUDENT</p>
+    <h1>Organized work.<br><span>Smarter solutions.</span></h1>
+    <p class="lead">I'm Mary Cris Inso, a dedicated Virtual Assistant and BSIT student with a passion for helping people stay organized, productive, and efficient. I offer reliable support in data entry, online research, administrative tasks, and IT-related projects.</p>
+    <div class="actions"><a class="btn primary" href="#projects">View My Projects <b>→</b></a><a class="btn secondary" href="#contact">Contact Me</a></div>
+    <div class="core"><span class="code">&lt;/&gt;</span><div><strong>CORE SKILLS</strong><p>Data Entry · Online Research · Administrative Support · IT Support</p></div></div>
+  </div>
+  <div class="hero-visual">
+    <div class="portrait">
+      <img src="images/profile.jpg" alt="Portrait of Mary Cris Inso" onerror="this.style.display='none';this.parentElement.classList.add('no-photo')">
+      <div class="photo-fallback" aria-hidden="true"><strong>MC</strong><small>ADD YOUR PHOTO</small></div>
+    </div>
+    <div class="hero-contact">
+      <div class="mini"><span>✉</span><div><small>Email</small><a href="mailto:marycrisinso@gmail.com">marycrisinso@gmail.com</a></div></div>
+      <div class="mini"><span>⌖</span><div><small>Location</small><p>Bogo City, Cebu / Remote</p></div></div>
+      <div class="social"><small>Connect with me</small><div><a href="https://github.com/marycrisinso" target="_blank" rel="noopener">GH</a><a href="https://www.linkedin.com/in/mary-cris-inso-a1b832365/" target="_blank" rel="noopener">in</a><a href="mailto:marycrisinso@gmail.com">✉</a></div></div>
+    </div>
+  </div>
+</section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
+<section class="about wrap divider" id="about">
+  <div><p class="kicker">ABOUT ME</p><h2>Hi, I’m Mary Cris Inso</h2>
+    <p>I'm a BSIT student and Virtual Assistant with a strong interest in technology, organization, and problem-solving. I enjoy working with digital tools, managing information, and learning new systems. I'm committed to providing quality support and being a reliable part of your team.</p>
+    <div class="details"><a href="mailto:marycrisinso@gmail.com">✉ &nbsp;marycrisinso@gmail.com</a><span>⌖ &nbsp;Bogo City, Cebu / Remote</span></div>
+  </div>
+  <div class="strengths">
+    <article><span>◎</span><div><h3>Detail-Oriented</h3><p>I focus on accuracy and quality in every task.</p></div></article>
+    <article><span>◇</span><div><h3>Reliable</h3><p>I work to meet deadlines and deliver consistent results.</p></div></article>
+    <article><span>ϟ</span><div><h3>Fast Learner</h3><p>I adapt quickly to new tools and systems.</p></div></article>
+    <article><span>♧</span><div><h3>Team Player</h3><p>I value clear communication and collaboration.</p></div></article>
+  </div>
+</section>
 
-        <div class="about-content">
-            <div class="about-text">
-                <p>
-                    I’m a detail-oriented and reliable professional with
-                    experience in writing assistance, data entry, content
-                    organization, and administrative support. My experience
-                    includes updating digital content, formatting documents,
-                    synchronizing subtitles, and checking information for
-                    accuracy and consistency.
-                </p>
+<section class="skills wrap divider" id="skills">
+  <div class="section-head"><div><p class="kicker">WHAT I CAN DO</p><h2>Skills &amp; Tools</h2></div><p>I've developed a versatile skill set through my studies and hands-on experience. Here are some of the tools and services I can support.</p></div>
+  <div class="skill-grid">
+    <article class="skill-card"><span class="icon">♙</span><h3>Virtual Assistance</h3><ul><li>Email management</li><li>Calendar scheduling</li><li>Online research</li><li>Administrative support</li></ul></article>
+    <article class="skill-card"><span class="icon">▤</span><h3>Data &amp; Office Tools</h3><ul><li>Microsoft Word, Excel, PowerPoint</li><li>Google Workspace</li><li>Google Sheets</li><li>Data entry &amp; file management</li></ul></article>
+    <article class="skill-card"><span class="icon">▣</span><h3>Design &amp; Web</h3><ul><li>HTML &amp; CSS</li><li>Basic web development</li><li>Canva</li><li>Editing &amp; formatting</li></ul></article>
+    <article class="skill-card"><span class="icon">⚙</span><h3>Other Tools</h3><ul><li>Git &amp; GitHub</li><li>VS Code</li><li>Notion</li><li>Zoom &amp; Google Meet</li></ul></article>
+  </div>
+</section>
 
-                <p>
-                    With a background in Information Technology, I enjoy
-                    working with digital tools, organizing information,
-                    solving problems, and learning new systems. I value
-                    accuracy, clear communication, organization, and
-                    delivering quality work on time.
-                </p>
+<section class="projects wrap divider" id="projects">
+  <div class="section-head"><div><p class="kicker">FEATURED WORK</p><h2>Selected Projects</h2></div><p>A selection of projects and practice work that demonstrate my organization, technical learning, and attention to detail.</p></div>
+  <div class="project-grid">
+    <article class="project-card"><div class="project-top"><span class="icon">&lt;/&gt;</span><small>01</small></div><h3>Portfolio Website</h3><p>A responsive personal portfolio built with HTML and CSS to present my skills, projects, and professional background.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div><a class="project-link" href="https://marycrisinso.github.io/mary-cris-portfolio/" target="_blank" rel="noopener">View Project ↗</a></article>
+    <article class="project-card"><div class="project-top"><span class="icon">♧</span><small>02</small></div><h3>Church Management System</h3><p>A system concept for organizing member details, tracking activities, and making information easier to manage.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Firebase</span></div><small class="note">Prototype / In progress</small></article>
+    <article class="project-card"><div class="project-top"><span class="icon">▤</span><small>03</small></div><h3>Data Organization</h3><p>Spreadsheet and content-organization practice focused on structured information, consistent formatting, and accuracy.</p><div class="tags"><span>Excel</span><span>Google Sheets</span><span>Data Entry</span></div><small class="note">Practice project</small></article>
+    <article class="project-card"><div class="project-top"><span class="icon">⌘</span><small>04</small></div><h3>Networking Report</h3><p>An academic presentation exploring computer networking and network-management concepts.</p><div class="tags"><span>Networking</span><span>Research</span><span>Presentation</span></div><small class="note">Academic project</small></article>
+  </div>
+</section>
 
-                <p>
-                    I’m open to opportunities in Virtual Assistance,
-                    Data Entry, Online Research, Administrative Support,
-                    Customer Support, and entry-level IT.
-                </p>
-            </div>
+<section class="experience wrap divider" id="experience">
+  <div class="experience-intro"><p class="kicker">PROFESSIONAL EXPERIENCE</p><h2>Experience</h2><p>Practical experience supporting content, data, and quality-checking tasks.</p></div>
+  <article class="experience-card"><span class="experience-icon">▣</span><div class="experience-body"><div class="job-heading"><div><h3>Freelance Writing Assistant</h3><p>Direct Client · Remote</p></div><small>Jul 2025 – Mar 2026</small></div><ul><li>Organized and formatted written content for various projects.</li><li>Handled data-entry and subtitle-synchronization tasks.</li><li>Performed quality checks to help ensure accuracy and consistency.</li></ul><div class="experience-tags"><strong>Key skills:</strong><span>Data Entry</span><span>Research</span><span>Content Organization</span><span>Attention to Detail</span></div></div></article>
+</section>
 
-            <div class="about-highlights">
-                <div class="highlight">
-                    <h3>Organized</h3>
-                    <p>I keep files, information, and tasks structured.</p>
-                </div>
-
-                <div class="highlight">
-                    <h3>Detail-Oriented</h3>
-                    <p>I check information and formatting carefully.</p>
-                </div>
-
-                <div class="highlight">
-                    <h3>Adaptable</h3>
-                    <p>I learn new tools and workflows efficiently.</p>
-                </div>
-
-                <div class="highlight">
-                    <h3>Reliable</h3>
-                    <p>I value responsibility and meeting deadlines.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-        <h2>Skills &amp; Tools</h2>
-
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Administrative Support</h3>
-                <div class="skill-list">
-                    <span>Administrative Assistance</span>
-                    <span>File Organization</span>
-                    <span>Document Formatting</span>
-                    <span>Task Management</span>
-                    <span>Content Updates</span>
-                    <span>Quality Checking</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Data &amp; Research</h3>
-                <div class="skill-list">
-                    <span>Data Entry</span>
-                    <span>Online Research</span>
-                    <span>Data Validation</span>
-                    <span>Information Organization</span>
-                    <span>Transcription</span>
-                    <span>Subtitle Synchronization</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Digital Tools</h3>
-                <div class="skill-list">
-                    <span>Microsoft Office</span>
-                    <span>Microsoft Excel</span>
-                    <span>Google Workspace</span>
-                    <span>GitHub</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Professional Skills</h3>
-                <div class="skill-list">
-                    <span>Attention to Detail</span>
-                    <span>Written Communication</span>
-                    <span>Time Management</span>
-                    <span>Organization</span>
-                    <span>Problem Solving</span>
-                    <span>Adaptability</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h2>Selected Projects</h2>
-
-        <p class="section-description">
-            A collection of projects and practical work demonstrating
-            my administrative, organizational, and IT skills.
-        </p>
-
-        <div class="projects-grid">
-
-            <article class="project-card">
-                <h3>Personal Portfolio Website</h3>
-
-                <p>
-                    Designed and developed a personal website to present
-                    my professional background, skills, projects, and
-                    contact information.
-                </p>
-
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>GitHub Pages</span>
-                </div>
-
-                <a
-                    href="https://marycrisinso.github.io/mary-cris-portfolio/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-link"
-                >
-                    View Live Website →
-                </a>
-            </article>
-
-            <article class="project-card">
-                <h3>Network Management Presentation</h3>
-
-                <p>
-                    Prepared an academic presentation covering network
-                    management, the FCAPS framework, monitoring protocols,
-                    troubleshooting, and network management tools.
-                </p>
-
-                <div class="project-tech">
-                    <span>Networking</span>
-                    <span>FCAPS</span>
-                    <span>Research</span>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <h3>C Programming Exercises</h3>
-
-                <p>
-                    Practiced programming fundamentals through exercises
-                    involving conditional statements, switch statements,
-                    loops, functions, and arrays.
-                </p>
-
-                <div class="project-tech">
-                    <span>C Programming</span>
-                    <span>Logic</span>
-                    <span>Problem Solving</span>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <h3>Content Organization &amp; Data Entry</h3>
-
-                <p>
-                    Provided freelance support with digital content
-                    organization, information updates, formatting,
-                    subtitle synchronization, and quality checking.
-                </p>
-
-                <div class="project-tech">
-                    <span>Data Entry</span>
-                    <span>Content Management</span>
-                    <span>Quality Assurance</span>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience">
-        <h2>Experience</h2>
-
-        <div class="experience-card">
-            <div class="experience-header">
-                <div>
-                    <h3>Writing Assistant</h3>
-                    <p class="company">Freelance · Direct Client</p>
-                </div>
-
-                <p class="experience-date">
-                    July 2025 – March 2026
-                </p>
-            </div>
-
-            <p class="experience-location">
-                Remote · Philippines
-            </p>
-
-            <p class="experience-summary">
-                Supported a client with digital content organization,
-                data entry, transcription, formatting, and quality
-                checking. Followed task requirements, maintained
-                organized content, and worked to meet deadlines.
-            </p>
-
-            <ul class="experience-list">
-                <li>
-                    Migrated and organized digital content across platforms.
-                </li>
-                <li>
-                    Entered and updated information according to requirements.
-                </li>
-                <li>
-                    Transcribed content and synchronized subtitles.
-                </li>
-                <li>
-                    Checked links, formatting, and content for inconsistencies.
-                </li>
-                <li>
-                    Maintained organized files and consistent content structure.
-                </li>
-            </ul>
-
-            <div class="experience-skills">
-                <span>Data Entry</span>
-                <span>Content Organization</span>
-                <span>Transcription</span>
-                <span>Document Formatting</span>
-                <span>Quality Checking</span>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Let's Connect</h2>
-
-        <p>
-            Looking for someone who values accuracy, organization,
-            and reliable support? I’d be happy to connect and discuss
-            opportunities where my skills can contribute to your team.
-        </p>
-
-        <div class="contact-links">
-            <a
-                href="https://www.linkedin.com/in/mary-cris-inso-a1b832365/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-link"
-            >
-                LinkedIn ↗
-            </a>
-
-            <a
-                href="https://github.com/marycrisinso"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-link"
-            >
-                GitHub ↗
-            </a>
-        </div>
-    </section>
-
+<section class="contact divider" id="contact"><div class="wrap contact-inner"><div><p class="kicker">LET'S CONNECT</p><h2>Get In Touch</h2><p>I'm open to suitable opportunities, collaborations, and meaningful conversations. Feel free to reach out!</p></div><div class="contact-actions"><a href="mailto:marycrisinso@gmail.com"><span>✉</span>Email Me</a><a href="https://www.linkedin.com/in/mary-cris-inso-a1b832365/" target="_blank" rel="noopener"><span>in</span>LinkedIn</a><a href="https://github.com/marycrisinso" target="_blank" rel="noopener"><span>GH</span>GitHub</a></div></div></section>
 </main>
+<footer><div class="wrap footer-inner"><a class="brand" href="#home">MARY CRIS <span>INSO</span></a><p>© <span id="year">2026</span> Mary Cris Inso. All rights reserved.</p></div></footer>
 
-
-<!-- ==================== FOOTER ==================== -->
-<footer>
-    <p>© 2026 Mary Cris Inso. All rights reserved.</p>
-</footer>
+<script>
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+toggle.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', String(open));
+});
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false');
+}));
+const links = [...document.querySelectorAll('.nav a')];
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) links.forEach(link => link.classList.toggle('active', link.hash === '#' + entry.target.id));
+  }), {rootMargin: '-35% 0px -55% 0px'});
+  document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
+}
+document.querySelector('.theme-toggle').addEventListener('click', e => {
+  document.body.classList.toggle('light-theme');
+  e.currentTarget.textContent = document.body.classList.contains('light-theme') ? '☀' : '☾';
+});
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
