@@ -532,3 +532,241 @@ nav a:hover {
         padding: 14px 18px;
     }
 }
+
+
+/* =========================================
+   FINAL HERO RESTORATION
+   Matches the existing index.html classes
+========================================= */
+
+header {
+    background: #050505;
+}
+
+.hero {
+    width: 1100px;
+    max-width: 90%;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    min-width: 0;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero-image img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00a8ff;
+    box-shadow: 0 0 0 2px #00d9a5;
+}
+
+/* Information card */
+
+.hero-content {
+    min-width: 0;
+    padding: 28px;
+    background: #080808;
+    border: 1px solid #00a8ff;
+    border-radius: 5px;
+}
+
+.hero-greeting {
+    color: #dedede;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.hero-name {
+    color: #ffffff;
+    font-size: clamp(28px, 3vw, 40px);
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+/* Job titles */
+
+.hero-content .hero-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 9px;
+    margin-bottom: 18px;
+    color: #00d4e5;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-title .sep {
+    color: #00a8ff;
+}
+
+/* Skills and strengths badge */
+
+.hero-pill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 16px;
+    padding: 10px 15px;
+    background: #09272d;
+    border: 1px solid #075b66;
+    border-radius: 30px;
+    color: #e5faff;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.hero-pill .dot {
+    color: #00d4e5;
+}
+
+.hero-content .hero-description {
+    margin: 0;
+    color: #dedede;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Hero buttons */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+}
+
+.hero-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 18px;
+    border: 1px solid #00a8ff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.25s ease;
+}
+
+.hero-buttons .primary-btn {
+    background: #00c9a7;
+    border-color: #00c9a7;
+    color: #ffffff;
+}
+
+.hero-buttons .secondary-btn {
+    background: transparent;
+    border-color: #00a8ff;
+    color: #00baff;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 18px rgba(0, 168, 255, 0.2);
+}
+
+/* Navigation */
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: fit-content;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 16px 26px;
+    background: #141824;
+    border: 1px solid #292f40;
+    border-radius: 40px;
+}
+
+header nav a {
+    color: #f1f5ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #00d4e5;
+}
+
+/* Responsive layout */
+
+@media (max-width: 760px) {
+    .hero {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+        margin-top: 35px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-content {
+        padding: 24px;
+    }
+
+    .hero-name {
+        font-size: 30px;
+    }
+
+    .hero-content .hero-title {
+        font-size: 16px;
+    }
+
+    .hero-pill {
+        justify-content: flex-start;
+        border-radius: 16px;
+    }
+
+    header nav {
+        gap: 14px;
+        padding: 14px 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero-buttons .btn {
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .hero-content {
+        padding: 18px;
+    }
+}
