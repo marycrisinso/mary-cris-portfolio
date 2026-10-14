@@ -469,3 +469,86 @@ header {
         width: 100%;
     }
 }
+
+
+/* ===== RESTORE HERO BUTTONS ===== */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 0;
+}
+
+.hero-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 22px;
+    border: 1px solid #00a8ff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+
+.hero-buttons .primary-btn {
+    background: #00a8ff;
+    color: #050505;
+}
+
+.hero-buttons .secondary-btn {
+    background: transparent;
+    color: #00d4e5;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 18px rgba(0, 168, 255, 0.2);
+}
+
+/* ===== RESTORE CENTERED NAVIGATION ===== */
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: fit-content;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 18px 28px;
+    background: #141824;
+    border: 1px solid #292f40;
+    border-radius: 40px;
+}
+
+header nav a {
+    color: #f1f5ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #00d4e5;
+}
+
+/* ===== MOBILE NAVIGATION ===== */
+
+@media (max-width: 600px) {
+    .hero-buttons {
+        gap: 12px;
+    }
+
+    header nav {
+        gap: 16px;
+        padding: 15px 18px;
+    }
+}
+
