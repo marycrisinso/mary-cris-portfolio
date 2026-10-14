@@ -36,112 +36,260 @@ header {
    HERO SECTION
 ========================= */
 
+
+/* =========================================
+   HERO SECTION — LARGER DESKTOP LAYOUT
+========================================= */
+
 .hero {
-    width: 1100px;
-    max-width: 90%;
-
-    margin: 80px auto 0;
-
+    width: 1240px;
+    max-width: 92%;
+    min-height: 590px;
+    margin: 0 auto;
+    padding: 45px 0;
     display: grid;
-
-    grid-template-columns: 480px 1fr;
-
-    gap: 70px;
-
+    grid-template-columns: 390px minmax(0, 1fr);
+    gap: 60px;
     align-items: center;
 }
 
-
-/* =========================
-   LEFT SIDE
-========================= */
+/* LEFT SIDE */
 
 .hero-left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
+    justify-content: center;
+    gap: 38px;
+    min-width: 0;
 }
 
-
-/* =========================
-   PROFILE IMAGE
-========================= */
+/* PROFILE PHOTO */
 
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .hero-image img {
-    width: 370px;
-    height: 370px;
-
+    width: 310px;
+    height: 310px;
+    max-width: 100%;
     object-fit: cover;
-
     border-radius: 50%;
-
     border: 3px solid #00a8ff;
-
-    box-shadow:
-        0 0 0 2px #00d9a5;
-
+    box-shadow: 0 0 0 2px #00d9a5;
     display: block;
 }
 
+/* HERO BUTTONS */
 
-/* =========================
-   HERO BUTTONS
-========================= */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 100%;
+}
 
+.hero-buttons .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border: 1px solid #00a8ff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
 
-/* =========================================
-   ABOUT ME — DARK MODERN CARDS
-========================================= */
-
-#about,
-#skills,
-#projects,
-#experience,
-#contact {
-    width: 1100px;
-    max-width: 90%;
-    margin: 90px auto;
-    padding: 42px 32px;
-    background: #090d18;
+.hero-buttons .primary-btn {
+    background: #00c9a7;
+    border-color: #00c9a7;
     color: #ffffff;
-    border: 1px solid #222b40;
-    border-radius: 18px;
-    scroll-margin-top: 30px;
 }
 
-/* Section headings */
+.hero-buttons .secondary-btn {
+    background: transparent;
+    color: #00baff;
+    border-color: #00a8ff;
+}
 
-#about h2,
-#skills h2,
-#projects h2,
-#experience h2,
-#contact h2 {
+.hero-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 18px rgba(0, 168, 255, 0.2);
+}
+
+/* RIGHT SIDE INFORMATION CARD */
+
+.hero-content {
+    min-width: 0;
+    padding: 38px;
+    background: #080808;
+    border: 1px solid #00a8ff;
+    border-radius: 6px;
+}
+
+.hero-greeting {
+    color: #dedede;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero-name {
+    color: #ffffff;
+    font-size: clamp(36px, 3.2vw, 46px);
+    line-height: 1.15;
+    margin-bottom: 16px;
+}
+
+.hero-content .hero-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 10px;
+    margin-bottom: 22px;
     color: #00d4e5;
-    font-size: 32px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 1.65;
 }
 
-#about h2::after,
-#skills h2::after,
-#projects h2::after,
-#experience h2::after,
-#contact h2::after {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 3px;
-    margin: 14px auto 0;
-    background: #00d4e5;
-    border-radius: 5px;
+.hero-title .sep {
+    color: #00a8ff;
+}
+
+.hero-pill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 22px;
+    padding: 12px 18px;
+    background: #09272d;
+    border: 1px solid #075b66;
+    border-radius: 30px;
+    color: #e5faff;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.hero-pill .dot {
+    color: #00d4e5;
+}
+
+.hero-content .hero-description {
+    margin: 0;
+    color: #dedede;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* NAVIGATION */
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    width: fit-content;
+    max-width: 92%;
+    margin: 0 auto;
+    padding: 18px 30px;
+    background: #141824;
+    border: 1px solid #292f40;
+    border-radius: 40px;
+}
+
+header nav a {
+    color: #f1f5ff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #00d4e5;
+}
+
+/* TABLETS AND SMALL LAPTOPS */
+
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 300px minmax(0, 1fr);
+        gap: 30px;
+        min-height: 520px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-content {
+        padding: 26px;
+    }
+
+    .hero-name {
+        font-size: 34px;
+    }
+
+    .hero-content .hero-title {
+        font-size: 17px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .hero {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        min-height: auto;
+        padding: 38px 0;
+    }
+
+    .hero-image img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero-content {
+        padding: 23px;
+    }
+
+    .hero-name {
+        font-size: 30px;
+    }
+
+    .hero-content .hero-title {
+        font-size: 16px;
+    }
+
+    .hero-content .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-pill {
+        justify-content: flex-start;
+        border-radius: 16px;
+    }
+
+    header nav {
+        gap: 15px;
+        padding: 15px 18px;
+    }
 }
 
 /* =========================================
@@ -546,7 +694,7 @@ header {
 .hero {
     width: 1100px;
     max-width: 90%;
-    margin: 60px auto 0;
+    margin: 50px auto 0;
     display: grid;
     grid-template-columns: 320px minmax(0, 1fr);
     gap: 50px;
@@ -571,9 +719,9 @@ header {
 
 .hero-image img {
     display: block;
-    width: 250px;
-    height: 250px;
-    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    max-width: 150%;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #00a8ff;
