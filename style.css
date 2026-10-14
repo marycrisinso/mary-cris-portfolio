@@ -1251,3 +1251,122 @@ nav {
         min-width: 150px;
     }
 }
+
+
+/* =========================
+   PORTFOLIO SECTION POLISH
+   Matches the existing color palette
+========================= */
+
+/* Keep section spacing consistent */
+#about,
+#skills,
+#projects,
+#experience,
+#contact {
+    scroll-margin-top: 30px;
+}
+
+/* Improve section descriptions */
+.section-description {
+    color: #526575;
+    line-height: 1.7;
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+/* Refine paragraph readability */
+#about .about-text p,
+#contact > p {
+    color: #526575;
+    line-height: 1.8;
+}
+
+/* Consistent card text spacing */
+.highlight p,
+.skill-category,
+.project-card,
+.experience-card {
+    line-height: 1.7;
+}
+
+/* Keep project links consistent with existing buttons */
+.project-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #163b5c;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #8db4d1;
+    padding-bottom: 3px;
+    transition: color 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.project-link:hover {
+    color: #39739d;
+    border-color: #39739d;
+}
+
+/* Make contact buttons consistent */
+.contact-links > a.contact-link {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #163b5c;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #163b5c;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.25s ease,
+                border-color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.contact-links > a.contact-link:hover {
+    background-color: #244e6b;
+    border-color: #244e6b;
+    transform: translateY(-2px);
+}
+
+/* Visible keyboard focus */
+.project-link:focus-visible,
+.contact-links a:focus-visible {
+    outline: 3px solid #8db4d1;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* Prevent long content from breaking card layouts */
+.about-content > *,
+.about-highlights > *,
+.skills-grid > *,
+.projects-grid > *,
+.experience-card {
+    min-width: 0;
+}
+
+.project-card p,
+.experience-summary {
+    overflow-wrap: anywhere;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .highlight,
+    .skill-category,
+    .skill-list span,
+    .project-card,
+    .project-link,
+    .contact-links > a {
+        transition: none;
+    }
+
+    .highlight:hover,
+    .skill-category:hover,
+    .skill-list span:hover,
+    .project-card:hover,
+    .contact-links > a:hover {
+        transform: none;
+    }
+}
